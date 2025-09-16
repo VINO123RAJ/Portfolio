@@ -1,9 +1,9 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/VINO123RAJ ", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/p-vinoth-raj-141104raj/", label: "LinkedIn" },
+  // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
 ];
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-muted-foreground">
-              © 2024 Alex Chen. All rights reserved.
+              © 2025 Vinothraj. All rights reserved.
             </p>
           </div>
 

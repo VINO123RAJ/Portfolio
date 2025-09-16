@@ -169,6 +169,491 @@
   }
 }
 
+/* ==================================================
+   EXTREME ADVANCED ANIMATIONS FOR PROJECTS SECTION
+   ================================================== */
+
+/* 3D Perspective Transforms */
+@keyframes rotate3D {
+  0% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  33% { transform: perspective(1000px) rotateX(5deg) rotateY(15deg) rotateZ(1deg); }
+  66% { transform: perspective(1000px) rotateX(-3deg) rotateY(-10deg) rotateZ(-1deg); }
+  100% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+}
+
+@keyframes tilt3D {
+  0% { transform: perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1); }
+  100% { transform: perspective(1200px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) scale(1.05); }
+}
+
+@keyframes cardDepth {
+  0% { 
+    transform: perspective(1000px) translateZ(0px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  100% { 
+    transform: perspective(1000px) translateZ(50px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+  }
+}
+
+/* Liquid Morphing Effects */
+@keyframes liquidMorph {
+  0% { 
+    border-radius: 1rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  25% { 
+    border-radius: 2rem 1rem 3rem 0.5rem;
+    clip-path: polygon(0% 0%, 95% 5%, 100% 90%, 5% 100%);
+  }
+  50% { 
+    border-radius: 3rem 0.5rem 1rem 2rem;
+    clip-path: polygon(5% 0%, 100% 10%, 95% 100%, 0% 90%);
+  }
+  75% { 
+    border-radius: 1rem 3rem 0.5rem 2rem;
+    clip-path: polygon(10% 5%, 90% 0%, 100% 95%, 0% 100%);
+  }
+  100% { 
+    border-radius: 1rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes liquidRipple {
+  0% {
+    background: radial-gradient(circle at 50% 50%, transparent 0%, transparent 20%, rgba(59, 130, 246, 0.1) 21%, rgba(59, 130, 246, 0.1) 100%);
+  }
+  50% {
+    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 40%, transparent 41%, transparent 100%);
+  }
+  100% {
+    background: radial-gradient(circle at 50% 50%, transparent 0%, transparent 60%, rgba(59, 130, 246, 0.05) 61%, rgba(59, 130, 246, 0.05) 100%);
+  }
+}
+
+@keyframes liquidFlow {
+  0% { 
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+  }
+  33% { 
+    background-position: 100% 50%;
+    background-size: 120% 120%;
+  }
+  66% { 
+    background-position: 50% 100%;
+    background-size: 110% 110%;
+  }
+  100% { 
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+  }
+}
+
+/* Advanced Image Reveals */
+@keyframes imageReveal {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transform: scale(1.2);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: scale(1);
+  }
+}
+
+@keyframes maskReveal {
+  0% {
+    mask: linear-gradient(90deg, transparent 0%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, transparent 100%);
+  }
+  100% {
+    mask: linear-gradient(90deg, black 0%, black 100%);
+    -webkit-mask: linear-gradient(90deg, black 0%, black 100%);
+  }
+}
+
+@keyframes gradientMorph {
+  0% { 
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  }
+  25% { 
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  }
+  50% { 
+    background: linear-gradient(225deg, #ec4899, #f59e0b);
+  }
+  75% { 
+    background: linear-gradient(315deg, #f59e0b, #10b981);
+  }
+  100% { 
+    background: linear-gradient(45deg, #10b981, #3b82f6);
+  }
+}
+
+@keyframes overlaySlide {
+  0% { 
+    transform: translateX(-100%) skewX(-15deg);
+    opacity: 0;
+  }
+  50% { 
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+  100% { 
+    transform: translateX(100%) skewX(15deg);
+    opacity: 0;
+  }
+}
+
+/* Magnetic & Interactive Effects */
+@keyframes magneticPull {
+  0% { 
+    transform: translate(0, 0) scale(1);
+  }
+  100% { 
+    transform: translate(var(--magnetic-x, 0), var(--magnetic-y, 0)) scale(1.05);
+  }
+}
+
+@keyframes orbitalFloat {
+  0% { 
+    transform: rotate(0deg) translateX(var(--orbit-radius, 60px)) rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg) translateX(var(--orbit-radius, 60px)) rotate(-360deg);
+  }
+}
+
+@keyframes skillCluster {
+  0% { 
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+  }
+  50% { 
+    transform: scale(1.1) rotate(2deg);
+    opacity: 1;
+  }
+  100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes floatingTag {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% { 
+    transform: translateY(-8px) rotate(1deg);
+  }
+  50% { 
+    transform: translateY(-12px) rotate(-1deg);
+  }
+  75% { 
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+}
+
+/* Particle Systems */
+@keyframes particleFloat {
+  0% { 
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+  10% { 
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  90% { 
+    opacity: 1;
+    transform: translate(var(--dx, 20px), var(--dy, -30px)) scale(1);
+  }
+  100% { 
+    transform: translate(var(--dx, 20px), var(--dy, -30px)) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes particleGlow {
+  0%, 100% { 
+    box-shadow: 0 0 10px currentColor;
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 20px currentColor;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes energyPulse {
+  0% { 
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.8) 0%, rgba(59, 130, 246, 0.2) 50%, transparent 100%);
+    transform: scale(1);
+  }
+  50% { 
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.9) 0%, rgba(139, 92, 246, 0.3) 60%, transparent 100%);
+    transform: scale(1.5);
+  }
+  100% { 
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.8) 0%, rgba(16, 185, 129, 0.2) 50%, transparent 100%);
+    transform: scale(1);
+  }
+}
+
+/* Modal 3D Entrance */
+@keyframes modalEntrance3D {
+  0% { 
+    transform: perspective(1000px) rotateX(-90deg) scale(0.8);
+    opacity: 0;
+  }
+  50% { 
+    transform: perspective(1000px) rotateX(-45deg) scale(0.9);
+    opacity: 0.7;
+  }
+  100% { 
+    transform: perspective(1000px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes backdropBlur {
+  0% { 
+    backdrop-filter: blur(0px);
+    background: rgba(0, 0, 0, 0);
+  }
+  100% { 
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes contentStagger {
+  0% { 
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Spring Physics */
+@keyframes springBounce {
+  0% { 
+    transform: scale(1);
+  }
+  15% { 
+    transform: scale(1.1);
+  }
+  30% { 
+    transform: scale(0.95);
+  }
+  45% { 
+    transform: scale(1.05);
+  }
+  60% { 
+    transform: scale(0.98);
+  }
+  75% { 
+    transform: scale(1.02);
+  }
+  90% { 
+    transform: scale(0.99);
+  }
+  100% { 
+    transform: scale(1);
+  }
+}
+
+@keyframes elasticPop {
+  0% { 
+    transform: scale(0.8) rotate(-5deg);
+  }
+  50% { 
+    transform: scale(1.2) rotate(3deg);
+  }
+  70% { 
+    transform: scale(0.9) rotate(-1deg);
+  }
+  85% { 
+    transform: scale(1.05) rotate(0.5deg);
+  }
+  100% { 
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* GPU-Accelerated Transform Classes */
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.animate-rotate-3d {
+  animation: rotate3D 20s infinite ease-in-out;
+}
+
+.animate-liquid-morph {
+  animation: liquidMorph 8s infinite ease-in-out;
+}
+
+.animate-liquid-ripple {
+  animation: liquidRipple 3s infinite ease-in-out;
+}
+
+.animate-liquid-flow {
+  animation: liquidFlow 6s infinite ease-in-out;
+}
+
+.animate-image-reveal {
+  animation: imageReveal 0.8s ease-out;
+}
+
+.animate-mask-reveal {
+  animation: maskReveal 1.2s ease-out;
+}
+
+.animate-gradient-morph {
+  animation: gradientMorph 10s infinite ease-in-out;
+}
+
+.animate-overlay-slide {
+  animation: overlaySlide 2s ease-in-out;
+}
+
+.animate-magnetic-pull {
+  animation: magneticPull 0.3s ease-out;
+}
+
+.animate-orbital-float {
+  animation: orbitalFloat 15s infinite linear;
+}
+
+.animate-skill-cluster {
+  animation: skillCluster 0.6s ease-out;
+}
+
+.animate-floating-tag {
+  animation: floatingTag 4s infinite ease-in-out;
+}
+
+.animate-particle-float {
+  animation: particleFloat 3s infinite ease-out;
+}
+
+.animate-particle-glow {
+  animation: particleGlow 2s infinite ease-in-out;
+}
+
+.animate-energy-pulse {
+  animation: energyPulse 4s infinite ease-in-out;
+}
+
+.animate-modal-entrance-3d {
+  animation: modalEntrance3D 0.8s ease-out;
+}
+
+.animate-backdrop-blur {
+  animation: backdropBlur 0.5s ease-out;
+}
+
+.animate-content-stagger {
+  animation: contentStagger 0.4s ease-out;
+}
+
+.animate-spring-bounce {
+  animation: springBounce 0.6s ease-out;
+}
+
+.animate-elastic-pop {
+  animation: elasticPop 0.5s ease-out;
+}
+
+/* Advanced Utility Classes */
+.liquid-border {
+  border-radius: 1rem;
+  transition: border-radius 0.3s ease;
+}
+
+.liquid-border:hover {
+  animation: liquidMorph 2s ease-in-out;
+}
+
+.magnetic-area {
+  transition: transform 0.1s ease-out;
+}
+
+.orbital-container {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.floating-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.particle-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.energy-field {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.perspective-container {
+  perspective: 1200px;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+}
+
+.tilt-element {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-rotate-3d,
+  .animate-liquid-morph,
+  .animate-liquid-ripple,
+  .animate-liquid-flow,
+  .animate-orbital-float,
+  .animate-floating-tag,
+  .animate-particle-float,
+  .animate-particle-glow,
+  .animate-energy-pulse {
+    animation: none;
+  }
+  
+  .tilt-element {
+    transform: none !important;
+  }
+  
+  .magnetic-area {
+    transform: none !important;
+  }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.6s ease-out;
 }

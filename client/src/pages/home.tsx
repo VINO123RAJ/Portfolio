@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
-import AboutSection from "@/components/about-section";
+import AboutSection3D from "@/components/about-section-3d";
 import ProjectsSection from "@/components/projects-section";
 import SkillsSection from "@/components/skills-section";
 import TestimonialsSection from "@/components/testimonials-section";
@@ -34,7 +34,7 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <AboutSection />
+        <AboutSection3D />
         <ProjectsSection onProjectSelect={handleProjectSelect} />
         <SkillsSection />
         <TestimonialsSection />

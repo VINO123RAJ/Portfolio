@@ -155,7 +155,7 @@ const LiquidButton = ({ children, onClick, variant = "primary", className = "", 
   );
 };
 
-const typewriterText = "Senior Frontend & AI Engineer";
+const typewriterText = "Frontend & UI Developer";
 
 export default function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -288,7 +288,7 @@ export default function HeroSection() {
             }}
           >
             <MorphingText 
-              text="Alex Chen"
+              text="Vinothraj P"
               className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-8 cursor-pointer"
             />
           </motion.div>
@@ -325,7 +325,7 @@ export default function HeroSection() {
               textShadow: "0 2px 4px rgba(0,0,0,0.3)"
             }}
           >
-            Creating extraordinary digital experiences with{" "}
+            A Computer Science student with {" "}
             <motion.span
               className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent font-semibold"
               animate={{
@@ -333,9 +333,9 @@ export default function HeroSection() {
               }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              cutting-edge AI integration
+              frontend development experience
             </motion.span>{" "}
-            and futuristic web technologies
+            and a passion for building AI-powered automation solutions.
           </motion.p>
 
           {/* Liquid morphing buttons */}
@@ -380,10 +380,10 @@ export default function HeroSection() {
             transition={{ delay: 2.8, duration: 0.8 }}
           >
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub", color: "#ff6b6b" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "#4ecdc4" },
-              { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "#45b7d1" },
-              { icon: Mail, href: "mailto:alex@example.com", label: "Email", color: "#f9ca24" },
+              { icon: Github, href: "https://github.com/VINO123RAJ/", label: "GitHub", color: "#ff6b6b" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/p-vinoth-raj-141104raj/", label: "LinkedIn", color: "#4ecdc4" },
+              // { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "#45b7d1" },
+              { icon: Mail, href: "mailto:vinoloke1973@gmail.com", label: "Email", color: "#f9ca24" },
             ].map(({ icon: Icon, href, label, color }, index) => (
               <motion.a
                 key={label}

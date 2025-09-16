@@ -56,11 +56,13 @@ function ProjectCard({ project, index, onViewDetails }: ProjectCardProps) {
           <div className="flex justify-between items-center">
             <div className="flex space-x-3">
               <button
-                className="text-muted-foreground hover:text-primary transition-colors"
-                data-testid={`github-${project.id}`}
-              >
-                <Github className="w-4 h-4" />
-              </button>
+  onClick={() => window.open(project.github, "_blank")}
+  className="text-muted-foreground hover:text-primary transition-colors"
+  data-testid={`github-${project.id}`}
+>
+  <Github className="w-4 h-4" />
+</button>
+
               <button
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid={`live-demo-${project.id}`}

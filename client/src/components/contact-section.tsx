@@ -21,28 +21,28 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "alex.chen@example.com",
-    href: "mailto:alex.chen@example.com",
+    value: "vinoloke1973@gmail.com",
+    href: "mailto:vinoloke1973@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+91 9384794005",
+    href: "tel:+91 9384794005",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Chennai, India",
     href: "#",
   },
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Dribbble, href: "https://dribbble.com", label: "Dribbble" },
+  { icon: Github, href: "https://github.com/VINO123RAJ ", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/p-vinoth-raj-141104raj/", label: "LinkedIn" },
+  // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  // { icon: Dribbble, href: "https://dribbble.com", label: "Dribbble" },
 ];
 
 export default function ContactSection() {
