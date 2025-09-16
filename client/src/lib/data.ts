@@ -4,7 +4,7 @@ export const projects = [
     title: "AI Voice Assistant (JARVIS-Style)",
     description: "A Python-based voice assistant with features like face authentication, speech recognition, and task automation.",
     fullDescription: "Developed a Python-based, JARVIS-style voice assistant using a combination of web technologies (HTML, CSS, JavaScript) and Python with the Eel library. The assistant features integrated speech recognition and voice output, secure face authentication, wake-word detection, and automation capabilities for WhatsApp and system control tasks.",
-    image: "/voice.jpeg",
+    image: "/public/voice.jpeg",
     category: "AI",
     technologies: ["Python", "HTML", "CSS", "JavaScript", "Eel", "Speech Recognition"],
     features: [
@@ -23,7 +23,7 @@ export const projects = [
     title: "WeatherSphere - Real-Time Weather App",
     description: "A responsive weather application that fetches and displays live weather data from an API.",
     fullDescription: "Developed a responsive, real-time weather application using fundamental web technologies. It integrates the OpenWeatherMap API to fetch and display current weather data, featuring a user-friendly, interactive UI with a responsive layout and dynamic weather icons. The application includes robust error handling for API requests.",
-    image: "/Weather.png",
+    image: "/public/Weather.png",
     category: "Weather Web Application",
     technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
     features: [
@@ -42,7 +42,7 @@ export const projects = [
   "title": "Frontend E-commerce Platform",
   "description": "Modern e-commerce frontend with responsive UI, dynamic product filtering, and AI-driven recommendations.",
   "fullDescription": "A sleek, high-performance frontend e-commerce platform designed with modern UI/UX principles. Built using Next.js and TypeScript, featuring responsive layouts, dynamic product filtering, and AI-driven product recommendations. Integrated with backend APIs for payments, inventory, and order management.",
-  "image": "/ecommerce.jpg",
+  "image": "/public/ecommerce.jpg",
   "category": "Frontend Development",
   "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Framer Motion"],
   "features": [

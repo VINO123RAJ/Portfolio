@@ -829,7 +829,7 @@ export default function AboutSection3D() {
       </div>
 
       <motion.img
-        src="/Vinoth.jpg"
+        src="/public/Vinoth.jpg"
         alt="Vinothraj P"
         className="relative z-10 rounded-xl w-full h-auto object-cover shadow-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1"
         initial={{ scale: 0.95, rotate: -2 }}

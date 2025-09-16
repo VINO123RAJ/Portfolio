@@ -1,0 +1,47 @@
+You are a world-class senior frontend engineer + creative designer. 
+Build me the **world’s best portfolio website** that feels professional, modern, and recruiter-attracting. 
+The site must showcase senior-level animations, transitions, and unique features that stand out.  
+
+Requirements:
+- Tech Stack: React + Next.js (latest) + Tailwind CSS + Framer Motion for animations + shadcn/ui components.
+- Design: Minimal, elegant, glassmorphism + subtle gradients + soft shadows. 
+  Must look professional and high-end (like a senior designer/engineer’s portfolio). 
+- Layout: 
+  • Hero section with my name, role (Frontend + AI Engineer), and dynamic text animation.  
+  • Smooth scrolling, parallax backgrounds, section reveals on scroll, hover animations.  
+  • About section with animated timeline of education + experience.  
+  • Projects showcase with interactive cards (3D tilt, hover animations, expandable modal with details).  
+  • Skills cloud (tags animate & float dynamically).  
+  • Resume download button with glowing hover animation.  
+  • Testimonials / achievements carousel with auto-rotation + manual controls.  
+  • Contact form (email + socials) with success/failure toast.  
+  • Sticky navbar with smooth scroll + active section highlight.  
+- Animations: 
+  • Framer Motion page transitions.  
+  • Parallax hero background with subtle floating elements.  
+  • 3D project cards (react-tilt or custom).  
+  • Scroll-triggered reveal animations.  
+  • Neon/glass hover effects.  
+- Features:
+  • Light/dark mode toggle with smooth transition.  
+  • Mobile-first, fully responsive.  
+  • SEO optimized (Next.js head metadata, open graph).  
+  • Performance-optimized (lazy load images, code-splitting).  
+  • Contact form integration with free email API (Resend, EmailJS, or Nodemailer).  
+- Deliverables:
+  • Full Next.js app with all code (pages, components, styles).  
+  • Clear folder structure (components/, pages/, styles/, lib/).  
+  • Deployment-ready (Vercel).  
+  • README with setup + deployment instructions.  
+  • Example placeholder data for projects, skills, and testimonials.  
+
+Goal:  
+Make it so attractive that recruiters and peers instantly get a **wow effect** — clean, innovative, and professional.  
+The portfolio should feel like it belongs to a **senior-level engineer + designer**.  
+
+Now generate the complete project with:  
+1. Repository tree  
+2. All key files (pages, components, styles, animations) with **working code** (not placeholders).  
+3. Demo content (projects, skills, testimonials) I can replace easily.  
+4. Tailwind + Framer Motion animations implemented cleanly.  
+5. Instructions to run locally and deploy to Vercel.  
